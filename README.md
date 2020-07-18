@@ -1,6 +1,7 @@
 # General
-Programming languange: PHP (CI)
-Database name is: **program_task_test**
+Programming languange: PHP (CI).
+PHP Version: 7.3.8.
+Database name is: **program_task_test**.
 Database located at: <root-project>/database/
 
 # Installation
