@@ -1,8 +1,8 @@
 # General
-Programming languange: PHP (CI).
-PHP Version: 7.3.8.
-Database name is: **program_task_test**.
-Database located at: {root-project}/database/
+- Programming languange: PHP (CI).
+- PHP Version: 7.3.8.
+- Database name is: **program_task_test**.
+- Database located at: {root-project}/database/
 
 # Installation
 1. copy zip code and put into htdocs (XAMPP) or similar web server that has support php language and extract over there
@@ -22,8 +22,8 @@ Database located at: {root-project}/database/
 **(eg: http://localhost:8800/programming_task/home/create)**
 3. to display list of employees, access this url:
 - http://{hostname}:{port}/{root-project}/home/employees/{order_by}{field}?{limit}&{offset}
-- order_by can be **-** (means ASC) and **+** (means DESC)
-- field can be **name, login or id**
-- limit, just put in url **limit={number of limitation}**
-- offset, just put in url **offset={number of starting point}**
+- _order_by_ can be **-** (means ASC) and **+** (means DESC)
+- _field_ can be **name, login or id**
+- _limit_, just put in url **limit={number of limitation}**
+- _offset_, just put in url **offset={number of starting point}**
 **(eg: http://localhost:8800/programming_task/home/employees/-name?limit=10&offset=1)**
