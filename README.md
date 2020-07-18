@@ -2,7 +2,7 @@
 Programming languange: PHP (CI).
 PHP Version: 7.3.8.
 Database name is: **program_task_test**.
-Database located at: <root-project>/database/
+Database located at: {root-project}/database/
 
 # Installation
 1. copy zip code and put into htdocs (XAMPP) or similar web server that has support php language and extract over there
@@ -15,13 +15,13 @@ Database located at: <root-project>/database/
 
 # How to Access
 1. to add employees, access this url:
-- http://<hostname>:<port>/<root-project>/home/v_create
+- http://{hostname}:{port}/{root-project}/home/v_create
 **(eg: http://localhost:8800/programming_task/home/v_create)**
 2. the api that responsible to the process can be access by POST REQUEST at:
-- http://<hostname>:<port>/<root-project>/home/create
+- http://{hostname}:{port}/{root-project}/home/create
 **(eg: http://localhost:8800/programming_task/home/create)**
 3. to display list of employees, access this url:
-- http://<hostname>:<port>/<root-project>/home/employees/{order_by}{field}?{limit}&{offset}
+- http://{hostname}:{port}/{root-project}/home/employees/{order_by}{field}?{limit}&{offset}
 - order_by can be **-** (means ASC) and **+** (means DESC)
 - field can be **name, login or id**
 - limit, just put in url **limit={number of limitation}**
