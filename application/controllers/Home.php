@@ -30,11 +30,17 @@ class Home extends CI_Controller {
 		$field = substr($params, 1);
 		$limit = $this->input->get('limit', TRUE);
 		$offset = $this->input->get('offset', TRUE);
+		// if want to access as json data
+		$api = $this->input->get('api', TRUE);
 		// get data
 		$data = $this->Employee_model->get_employee($offset, $limit, [$order_by, $field]);
 
-		$this->load->view('_partials/v_header');
-		$this->load->view('v_employee', array('data' => $data));
-		$this->load->view('_partials/v_footer');
+		if(isset($api)) {
+			echo json_encode(array('status' => 200, 'data' => $data));
+		} else {
+			$this->load->view('_partials/v_header');
+			$this->load->view('v_employee', array('data' => $data));
+			$this->load->view('_partials/v_footer');
+		}
 	}
 }
