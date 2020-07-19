@@ -27,3 +27,7 @@
 - _limit_, just put in url **limit={number of limitation}**
 - _offset_, just put in url **offset={number of starting point}**
 **(eg: http://localhost:8800/programming_task/home/employees/-name?limit=10&offset=1)**
+### Additional
+if want to get response as a json, just put additional params in list of employees' url:
+- _?api=true_
+**(eg: http://localhost:8800/programming_task/home/employees/-name?limit=10&offset=1&api=true)**
